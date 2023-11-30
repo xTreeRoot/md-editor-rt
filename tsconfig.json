@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["ESNext", "DOM"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve", // react-jsx会提示不需要引用React，不支持16的版本
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["dev/*"],
-      "~~/*": ["packages/*"],
-      "~/*": ["packages/MdEditor/*"]
+    "target": "ESNext", // 目标 ECMAScript 版本为 ESNext
+    "useDefineForClassFields": true, // 在类字段声明时使用定义，用于启用类字段初始化器语法
+    "lib": ["ESNext", "DOM"], // 引入的默认库包括 ESNext 和 DOM
+    "allowJs": false, // 不允许编译 JavaScript 文件
+    "skipLibCheck": true, // 跳过对声明文件的类型检查
+    "esModuleInterop": false, // 禁用对默认导入的赋值模块的交互性
+    "allowSyntheticDefaultImports": true, // 允许导入没有默认导出的模块时生成默认导出
+    "strict": true, // 启用所有严格类型检查选项
+    "forceConsistentCasingInFileNames": true, // 强制文件名中的大小写一致
+    "module": "ESNext", // 输出模块规范为 ESNext
+    "moduleResolution": "Node", // 模块解析策略为 Node
+    "resolveJsonModule": true, // 启用导入 .json 模块的支持
+    "isolatedModules": true, // 禁用模块间的类型检查
+    "noEmit": true, // 不生成输出文件
+    "jsx": "preserve", // 保留 JSX 以便在输出中使用
+    "baseUrl": ".", // 设置解析非相对模块名称的基本目录
+    "paths": { // 路径映射配置
+      "@/*": ["dev/*"], // 将 @/* 映射到 dev/* 目录
+      "~~/*": ["packages/*"], // 将 ~~/* 映射到 packages/* 目录
+      "~/*": ["packages/MdEditor/*"] // 将 ~/* 映射到 packages/MdEditor/* 目录
     }
   },
-  "include": ["dev/**/*.ts", "dev/**/*.tsx", "packages/**/*.ts", "packages/**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["dev/**/*.ts", "dev/**/*.tsx", "packages/**/*.ts", "packages/**/*.tsx"], // 要包含的文件
+  "references": [{ "path": "./tsconfig.node.json" }] // 引用其他项目的配置文件路径
 }

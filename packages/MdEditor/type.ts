@@ -5,6 +5,7 @@ import { Extension } from '@codemirror/state';
 import { KeyBinding } from '@codemirror/view';
 import { IconName } from './components/Icon/Icon';
 
+//declare global 语法，用于声明全局变量的类型。在这里，它声明了一个名为 Window 的接口，该接口表示浏览器环境中的全局 window 对象。
 declare global {
   interface Window {
     hljs: any;

@@ -1,7 +1,7 @@
 {
-  "name": "md-editor-rt",
-  "version": "4.8.3",
-  "license": "MIT",
+  "name": "treeroot-md-editor",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
   "keywords": [
     "react",
     "nextjs",
@@ -15,18 +15,10 @@
     "theme",
     "html"
   ],
-  "description": "Markdown editor for react, developed in jsx and typescript, dark theme、beautify content by prettier、render articles directly、paste or clip the picture and upload it...",
+  "description": "Markdown editor",
   "author": {
-    "name": "zbf",
-    "url": "https://imzbf.top"
-  },
-  "homepage": "https://imzbf.github.io/md-editor-rt/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imzbf/md-editor-rt.git"
-  },
-  "bugs": {
-    "url": "https://github.com/imzbf/md-editor-rt/issues"
+    "name": "treeroot",
+    "url": "https://xu-genyin.gitee.io/"
   },
   "files": [
     "lib"

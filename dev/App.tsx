@@ -31,13 +31,13 @@ function App() {
   return (
     <StrictMode>
       <div className={['app', theme === 'dark' && 'theme-dark'].join(' ')}>
-        <Header
-          theme={theme}
-          onChange={setTheme}
-          onPreviewChange={setPreviewTheme}
-          onCodeThemeChange={setCodeTheme}
-          onLangChange={setLang}
-        />
+        {/*<Header*/}
+        {/*  theme={theme}*/}
+        {/*  onChange={setTheme}*/}
+        {/*  onPreviewChange={setPreviewTheme}*/}
+        {/*  onCodeThemeChange={setCodeTheme}*/}
+        {/*  onLangChange={setLang}*/}
+        {/*/>*/}
         <div className="page-body">
           <Preview
             lang={lang}
@@ -45,13 +45,13 @@ function App() {
             previewTheme={previewTheme}
             codeTheme={codeTheme}
           />
-          <SecEditor />
-          <PreviewOnly
-            lang={lang}
-            theme={theme}
-            previewTheme={previewTheme}
-            codeTheme={codeTheme}
-          />
+          {/*<SecEditor />*/}
+          {/*<PreviewOnly*/}
+          {/*  lang={lang}*/}
+          {/*  theme={theme}*/}
+          {/*  previewTheme={previewTheme}*/}
+          {/*  codeTheme={codeTheme}*/}
+          {/*/>*/}
         </div>
       </div>
     </StrictMode>

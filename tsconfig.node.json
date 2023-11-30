@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
+    // 开启项目编译，可以跨文件引用
     "composite": true,
+    // 指定输出 ESNext 规范的 JavaScript 模块
     "module": "ESNext",
+    // 指定模块解析方式为 Node.js
     "moduleResolution": "Node",
+    // 允许导入默认值时使用默认导出
     "allowSyntheticDefaultImports": true,
+    // 允许从 JSON 文件中导入模块
     "resolveJsonModule": true
   },
+  // 指定需要编译的文件
   "include": ["scripts/**/*.ts", "./package.json"]
 }
